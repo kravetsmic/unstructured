@@ -12,7 +12,7 @@ from typing import IO, TYPE_CHECKING, Callable, List, Optional
 from unstructured.documents.coordinates import PixelSpace
 from unstructured.documents.elements import Element, PageBreak
 from unstructured.file_utils.encoding import detect_file_encoding, format_encoding_str
-from unstructured.nlp.patterns import JSON_PATTERN, VALID_JSON_CHARACTERS
+from unstructured.nlp.patterns import LIST_OF_DICTS_PATTERN
 from unstructured.partition.common import (
     _add_element_metadata,
     _remove_element_metadata,
