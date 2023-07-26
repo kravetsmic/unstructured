@@ -1,5 +1,6 @@
 ## 0.9.1
 
+
 ### Enhancements
 
 * Adds --partition-pdf-infer-table-structure to unstructured-ingest.
