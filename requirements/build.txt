@@ -10,7 +10,7 @@ babel==2.12.1
     # via sphinx
 beautifulsoup4==4.12.2
     # via furo
-certifi==2023.7.22
+certifi==2023.5.7
     # via
     #   -c requirements/base.txt
     #   -c requirements/constraints.in
