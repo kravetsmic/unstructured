@@ -202,6 +202,7 @@ jobs:
         MS_USER_PNAME: ${{ secrets.MS_USER_PNAME }}
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         UNS_API_KEY: ${{ secrets.UNS_API_KEY }}
+        MS_USER_PNAME: ${{ secrets.MS_USER_PNAME }}
       run: |
         source .venv/bin/activate
         sudo apt-get update
