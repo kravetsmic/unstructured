@@ -96,6 +96,8 @@ def test_partition_via_api_raises_with_bad_response(monkeypatch):
         partition_via_api(filename=filename)
 
 
+@pytest.mark.skipif(skip_outside_ci, reason="Skipping test run outside of CI")
+@pytest.mark.skipif(skip_not_on_main, reason="Skipping test run outside of main branch")
 def test_partition_via_api_with_no_strategy():
     filename = os.path.join(DIRECTORY, "..", "..", "example-docs", "layout-parser-paper-fast.jpg")
 
@@ -107,6 +109,8 @@ def test_partition_via_api_with_no_strategy():
     assert elements_hi_res[0].text.startswith("LayoutParser")
 
 
+@pytest.mark.skipif(skip_outside_ci, reason="Skipping test run outside of CI")
+@pytest.mark.skipif(skip_not_on_main, reason="Skipping test run outside of main branch")
 def test_partition_via_api_with_image_hi_res_strategy_includes_coordinates():
     filename = os.path.join(DIRECTORY, "..", "..", "example-docs", "layout-parser-paper-fast.jpg")
 

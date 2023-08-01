@@ -412,10 +412,7 @@ def test_partition_html_from_file_custom_metadata_date(
     )
 
     with open(filename) as f:
-        elements = partition_html(
-            file=f,
-            metadata_last_modified=expected_last_modification_date,
-        )
+        elements = partition_html(file=f, metadata_last_modified=expected_last_modification_date)
 
     assert isinstance(elements[0], Title)
     assert elements[0].metadata.last_modified == expected_last_modification_date
